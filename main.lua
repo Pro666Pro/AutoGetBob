@@ -19,7 +19,7 @@ fireclickdetector(workspace.Lobby["GloveStands"]["Replica"].ClickDetector)
 task.wait(0.3)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-15.874173164367676, 362.9585876464844, -2.117299795150757)
 task.wait(1.15)
-for i = 1, 120000 do
+for i = 1, 150000 do
         game:GetService("ReplicatedStorage").Duplicate:FireServer(unpack({[1] = true}))
 end
 wait(3.5)
