@@ -19,10 +19,10 @@ fireclickdetector(workspace.Lobby["GloveStands"]["Replica"].ClickDetector)
 task.wait(0.3)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-15.874173164367676, 362.9585876464844, -2.117299795150757)
 task.wait(1.15)
-for i = 1, 100000 do
+for i = 1, 120000 do
         game:GetService("ReplicatedStorage").Duplicate:FireServer(unpack({[1] = true}))
 end
-wait(2)
+wait(3.5)
 local PlaceID = game.PlaceId
 local AllIDs = {}
 local foundAnything = ""
