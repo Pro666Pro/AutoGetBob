@@ -7,13 +7,12 @@ if  game:GetService("BadgeService"):UserHasBadgeAsync(game.Players.LocalPlayer.U
      return
 end
 
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Credits",Text = "Script upgraded by nexer. Original: DonjoSx" ,Duration = 1000, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "OK"})
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Credits",Text = "Script upgraded by nexer. Original script made by DonjoSx" ,Duration = 1000, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "OK"})
 fireclickdetector(workspace.Lobby["GloveStands"]["God's Hand"].ClickDetector)
 task.wait(0.3)
 game:GetService("ReplicatedStorage").TimestopJump:FireServer()
 game:GetService("ReplicatedStorage").Timestopchoir:FireServer()
 game:GetService("ReplicatedStorage").Timestop:FireServer()
-game.Players.LocalPlayer.Character.Humanoid.Health = 0
 task.wait(5.3)
 fireclickdetector(workspace.Lobby["GloveStands"]["Replica"].ClickDetector)
 task.wait(0.3)
