@@ -2,13 +2,12 @@ if not game:IsLoaded() then
      game.Loaded:Wait()
 end
 print("game loaded")
-
+-- ez
 if  game:GetService("BadgeService"):UserHasBadgeAsync(game.Players.LocalPlayer.UserId, 2125950512) then
      game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Yay!",Text = "You got bob!" ,Duration = 1000, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "OK"})
      wait(999999)
      return
 end
-
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Credits",Text = "Script upgraded by nexer. Original script made by DonjoSx" ,Duration = 1000, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "OK"})
 fireclickdetector(workspace.Lobby["GloveStands"]["God's Hand"].ClickDetector)
 task.wait(0.3)
@@ -23,9 +22,7 @@ task.wait(1.15)
 for i = 1, 100000 do
         game:GetService("ReplicatedStorage").Duplicate:FireServer(unpack({[1] = true}))
 end
-
 wait(2)
-
 local PlaceID = game.PlaceId
 local AllIDs = {}
 local foundAnything = ""
@@ -83,7 +80,6 @@ function TPReturner()
         end
     end
 end
-
 function Teleport()
     while wait() do
         pcall(function()
@@ -94,7 +90,6 @@ function Teleport()
         end)
     end
 end
-
 for i = 1, 9999 do
   Teleport()
 end
