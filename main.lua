@@ -5,6 +5,7 @@ print("game loaded")
 
 if  game:GetService("BadgeService"):UserHasBadgeAsync(game.Players.LocalPlayer.UserId, 2125950512) then
      game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Yay!",Text = "You got bob!" ,Duration = 1000, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "OK"})
+     wait(999999)
      return
 end
 
