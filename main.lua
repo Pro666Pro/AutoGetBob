@@ -9,16 +9,17 @@ if  game:GetService("BadgeService"):UserHasBadgeAsync(game.Players.LocalPlayer.U
      return
 end
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Credits",Text = "Script upgraded by nexer. Original script made by DonjoSx" ,Duration = 1000, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "OK"})
-fireclickdetector(workspace.Lobby["GloveStands"]["God's Hand"].ClickDetector)
+fireclickdetector(workspace.Lobby["God's Hand"].ClickDetector)
 task.wait(0.3)
 game:GetService("ReplicatedStorage").TimestopJump:FireServer()
 game:GetService("ReplicatedStorage").Timestopchoir:FireServer()
 game:GetService("ReplicatedStorage").Timestop:FireServer()
 task.wait(5.3)
-fireclickdetector(workspace.Lobby["GloveStands"]["Replica"].ClickDetector)
+fireclickdetector(workspace.Lobby["Replica"].ClickDetector)
 task.wait(0.3)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-15.874173164367676, 362.9585876464844, -2.117299795150757)
-task.wait(1.15)
+repeat task.wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-909, 328, 3) -- regular arena
+until game.Players.LocalPlayer.Character:FindFirstChild("entered")
 for i = 1, 150000 do
         game:GetService("ReplicatedStorage").Duplicate:FireServer(unpack({[1] = true}))
 end
