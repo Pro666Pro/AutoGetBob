@@ -20,6 +20,7 @@ task.wait(0.3)
 repeat task.wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-909, 328, 3) -- regular arena
 until game.Players.LocalPlayer.Character:FindFirstChild("entered")
+wait(0.4)
 for i = 1, 150000 do
         game:GetService("ReplicatedStorage").Duplicate:FireServer(unpack({[1] = true}))
 end
